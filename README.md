@@ -11,13 +11,39 @@
 
 ## 效果
 
-| 主角跑动（10 帧） | 主角攻击 + 施法 |
-|---|---|
-| ![hero run](examples/hero_run_frames.jpg) | ![hero attack skill](examples/hero_attack_skill_frames.jpg) |
+### 游戏内实拍
 
-| 四足怪跑动（8 帧） | 接入游戏后的实机表现 |
-|---|---|
-| ![boar run](examples/boar_run_frames.jpg) | ![ingame](examples/ingame_battle.jpg) |
+挂机战斗中：主角冲刺到怪身旁挥砍 → 飘字 → 归位。位移是**程序叠加**的，不是画在精灵里。
+
+![完整游戏画面](examples/game_full.jpg)
+
+![游戏内攻击演示](examples/game_attack.gif)
+
+### 角色动作：一张立绘 → 一整套
+
+**跑动**（10 帧循环，原地跑）：
+
+![hero run](examples/hero_run.gif)
+
+![hero run frames](examples/hero_run_frames.jpg)
+
+**攻击（剑）**（8 帧一次性动作，前冲位移由程序叠加）：
+
+![hero attack](examples/hero_attack.gif)
+
+![hero attack frames](examples/hero_attack_frames.jpg)
+
+**施法**（举剑蓄力 —— 大挥砍会被模型烘进大光弧，见 「五条铁律」第 4 条）：
+
+![hero skill](examples/hero_skill.gif)
+
+![hero skill frames](examples/hero_skill_frames.jpg)
+
+**四足怪跑动**（怪物必须给专属提示词，通用措辞会生成静止插画）：
+
+![boar run](examples/boar_run.gif)
+
+![boar run frames](examples/boar_run_frames.jpg)
 
 ---
 
